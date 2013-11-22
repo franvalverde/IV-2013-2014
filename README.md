@@ -83,10 +83,17 @@ Clase del 8 de noviembre de 2013
 Clase del 11 de noviembre de 2013
 -------------------------------
 
-- [ ] Entender el concepto de contenedores
-- [ ] Configurar el sistema para poder crear y usar contenedores
-- [ ] Crear y usar contenedores
+- [X] Entender el concepto de contenedores
+- [X] Configurar el sistema para poder crear y usar contenedores
+- [X] Crear y usar contenedores
 
+Clase del 15 de noviembre de 2013
+-------------------------------
 
+- [ ] Entender los sistemas de orquestación de máquinas virtuales.
+- [ ] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
+Clase del 18 de noviembre de 2013
+-------------------------------
 
+- [ ] Resumen del seminario de Trabajando en la nube, con Ignacio Zafra
