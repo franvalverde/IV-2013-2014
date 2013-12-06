@@ -96,7 +96,7 @@ Clase del 15 de noviembre de 2013
 Clase del 18 de noviembre de 2013
 -------------------------------
 
-- [ ] Resumen del seminario de Trabajando en la nube, con Ignacio Zafra
+- [X] Seminario de Trabajando en la nube, con Ignacio Zafra
 
 Clase del 22 de noviembre de 2013
 -------------------------------
