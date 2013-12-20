@@ -17,7 +17,6 @@ En primer lugar creamos el contenedor:
 sudo lxc-create -t ubuntu -n contenedor
 </pre>
 Despues de una larga instalación donde descomprime, valida y configura todos los paquetes para el contenedor, ejecutamos nuestro contenedor.
-
 ![captura 1] (https://dl.dropbox.com/s/r95d3sfhqz7i107/contenedor_instalado.png)
 <pre>
 sudo lxc-start -n contenedor
