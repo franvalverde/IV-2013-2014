@@ -69,14 +69,39 @@ sudo lxc-start -n contenedor-centos
 
 ![captura 4] (https://dl.dropbox.com/s/ra8b8mf7fno2fu0/arranque_centos_contenedor.png)
 
-El usuario y contraseña serian 'root', 'password'
+El usuario y contraseña serian `root`, `password`
 
 
 Ejercicio 4
 -----------
 
+<strong>1. Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.</strong>
+<hr>
+Para instalar lxc-webpanel seguimos este tutorial [http://lxc-webpanel.github.io/install.html] donde lo primero que nos indica es que usando la herramienta wget obtengamos el script para instalar el webpanel de lxc.
+<pre>
+wget http://lxc-webpanel.github.io/tools/install.sh -O - | bash
+</pre>
+Si por algún motivo la instalación no se completa esta la opción de realizar la instalación manual que se basa en clonar un repositorio de github y lanzar el archivo python de esa carpeta para ejecutar el proceso.
 
+Para comprobar que funciona entramos en http://localhost:5000 y acceder con el usuario admin y contraseña admin.
 
+![captura 5] (https://dl.dropbox.com/s/ddk7rjlqb6aj0jl/lwc%20web%20panel%20login.png)
+
+<hr>
+<strong>2. Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.</strong>
+<hr>
+
+Seleccionamos el contenedor al que vamos a realizarle la restricción, en mi caso se lo haré al contenedor "quemestascontainer". Hay que tener en cuenta que el contenedor debe estar parado para modificar estos aspectos, en caso contrario nos mostrará el error "Internal Server Error".
+
+Modificaciones: 
+
+- memory limit 1024
+
+- memory + SWAP limit 1024
+
+- CPUs 1
+
+- CPU shares 512 
 Ejercicio 5
 -----------
 
