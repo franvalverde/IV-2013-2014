@@ -8,7 +8,6 @@ Actualizamos los repositorios de apt e instalamos lxc.
 <pre>
 sudo apt-get install lxc
 </pre>
-
 Ejercicio 2
 -----------
 <strong>Comprobar que interfaces puente se han creado y explicarlos</strong>
@@ -19,19 +18,13 @@ sudo lxc-create -t ubuntu -n contenedor
 </pre>
 Despues de una larga instalación donde descomprime, valida y configura todos los paquetes para el contenedor, ejecutamos nuestro contenedor.
 
-[[https://dl.dropbox.com/s/r95d3sfhqz7i107/contenedor_instalado.png]]
-
+![captura 1] (https://dl.dropbox.com/s/r95d3sfhqz7i107/contenedor_instalado.png)
 <pre>
 sudo lxc-start -n contenedor
 </pre>
-
 Arracamos el contenedor y nos pide usuario y contraseña (ubuntu, ubuntu).
-
 Para ver las interfaces, ejecutamos ifconfig.
-
-[[https://dl.dropbox.com/s/i3idzerntqxgorh/ifconfig_contenedor.png]]
-
-
+![captura 2] (https://dl.dropbox.com/s/i3idzerntqxgorh/ifconfig_contenedor.png)
 Ejercicio 3
 -----------
 
