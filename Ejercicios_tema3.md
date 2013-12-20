@@ -219,7 +219,19 @@ juju status
 
 Ejercicio 8
 -----------
+<strong>Instalar libvirt</strong>
+En primer lugar actualizamos los repositorios e instalamos el paquete con apt.
+<pre>
+sudo apt-get update
+sudo apt-get install kvm libvirt-bin
+</pre>
+Después de instalar libvirt-bin, tendrá que ser agregado al grupo libvirtd el usuario que utiliza para administrar máquinas virtuales. Si lo hace, se le concederá el acceso de usuario a las opciones avanzadas de red.
+<pre>
+sudo adduser $USER libvirtd
+</pre>
 
+Ejercicio 9
+-----------
 
 
 
