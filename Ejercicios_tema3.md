@@ -136,12 +136,69 @@ ab -n 100 -c 10 http://127.0.0.1/
 
 Ejercicio 6
 -----------
+<strong>1. Instalar juju.</strong>
+<hr>
+En primer lugar añadimos un nuevo repostorio a la lista de apt y actualizamos los repositorios.
+<pre>
+sudo add-apt-get-repository ppa:juju/stable
+sudo apt-get update
+</pre>
+A continuación, instalamos juju desde apt:
+<pre>
+sudo apt-get install juju-core
+</pre>
+Creamos el archivo de configuración de juju:
+<pre>
+juju init
+#A boilerplate environment configuration file has been written to /home/franvalverde/.juju/environments.yaml.
+#Edit the file to configure your juju environment and run bootstrap.
+</pre>
 
+Modificamos el archivo de configuración que como nos indica el terminal al crearlo esta en la ruta "~/.juju/environments.yaml".
+ 
+Es importante modificar la linea de default para que trabaje en entorno local:
 
+<pre>
+#default: amazon
+default: local
+</pre>
 
-Ejercicio 1
+Por ultimo, creamos el entorno:
+
+<pre>
+juju bootstrap
+</pre>
+
+<hr>
+<strong>2. Usándolo, instalar MySql en un táper.</strong>
+<hr>
+Para trabajar en local hace falta instalar MongoDB.
+<pre>
+sudo apt-get install mongodb-server
+</pre>
+
+Para instalar mysql debemos de realizar la siguiente orden:
+
+<pre>
+juju deploy mysql
+</pre>
+
+Comprobamos que esta todo correcto con:
+
+<pre>
+juju status
+</pre>
+
+Ejercicio 7
 -----------
 
+
+
+
+
+
+Enlaces a las wikis
+===================
 
 [Ejercicios del 11 noviembre] (https://github.com/franvalverde/IV-2013-2014/wiki/Ejercicios-11-noviembre-2013)
 
