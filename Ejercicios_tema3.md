@@ -191,8 +191,34 @@ juju status
 
 Ejercicio 7
 -----------
+<strong>1. Destruir toda la configuración creada anteriormente</strong>
+<hr>
+<pre>sudo juju remove-unit mediawiki/0 mysql/0</pre>
+<hr>
+<strong>2. Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.</strong>
+<hr>
+Seguimos los pasos del ejercicio 6 para crear la maquina y añadimos los nuevos componentes. Para añadir meadiawiki. Deberemos de instalar tambien mysql para la integridad con mediawiki.
+<pre> 
+sudo juju deploy mediawiki
+sudo juju deploy mysql
+</pre>
+<hr>
+<strong>3. Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta</strong>
+<hr>
+<pre>
+#!/bin/bash
+juju init
+juju switch local 
+juju bootstrap 
+juju deploy mediawiki
+juju deploy mysql 
+juju add-relation mediawiki:db mysql 
+juju expose mediawiki 
+juju status 
+</pre>
 
-
+Ejercicio 8
+-----------
 
 
 
