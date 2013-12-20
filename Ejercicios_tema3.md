@@ -1,5 +1,13 @@
 Ejercicios Tema 3 IV 2013-2014
 ==============================
+Ejercicio 1
+-----------
+Instala LXC
+<hr>
+Actualizamos los repositorios de apt e instalamos lxc. 
+<pre>
+sudo apt-get install lxc
+</pre>
 
 [Ejercicios del 11 noviembre] (https://github.com/franvalverde/IV-2013-2014/wiki/Ejercicios-11-noviembre-2013)
 
