@@ -2,7 +2,7 @@ Ejercicios Tema 3 IV 2013-2014
 ==============================
 Ejercicio 1
 -----------
-Instala LXC
+<strong>Instala LXC</strong>
 <hr>
 Actualizamos los repositorios de apt e instalamos lxc. 
 <pre>
