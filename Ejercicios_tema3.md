@@ -94,21 +94,49 @@ Para comprobar que funciona entramos en http://localhost:5000 y acceder con el u
 Seleccionamos el contenedor al que vamos a realizarle la restricción, en mi caso se lo haré al contenedor "quemestascontainer". Hay que tener en cuenta que el contenedor debe estar parado para modificar estos aspectos, en caso contrario nos mostrará el error "Internal Server Error".
 
 Modificaciones: 
-
 - memory limit 1024
-
 - memory + SWAP limit 1024
-
 - CPUs 1
+- CPU shares 512
 
-- CPU shares 512 
 Ejercicio 5
 -----------
+<strong>Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.</strong>
+<hr>
+Usaremos la jaula creada en el tema anterior "debian" para arrancarla:
+<pre>
+sudo chroot debian
+</pre>
+Y el contenedor ubuntu, para lanzarlo:
+<pre>
+sudo lxc-start -n contenedor
+</pre>
+Instalamos nginx en ambas plataformas:
+<pre>
+sudo apt-get update
+sudo apt-get install nginx
+sudo apt-get install apache2-utils
+# en caso de la jaula no es necesario poner sudo ya que accedemos como tal.
+</pre>
+- Asignamos una ip fija al contenedor mediante lxc-panel control.
+- Montamos el filesystem virtual /proc en la jaula "mount -t proc proc /proc"
+- Arrancamos nginx: "/etc/init.d/nginx start"
 
+<u>Contenedor</u>
 
+ab -n 100 -c 10 http://10.0.3.63/
+
+![captura 6] (https://dl.dropbox.com/s/hyvy6yjj9n6jx89/ab-contenedor.png)
+
+<u>Jaula</u>
+
+ab -n 100 -c 10 http://127.0.0.1/
+
+![captura 7] (https://dl.dropbox.com/s/f8iciidfqwsbodf/ab-jaula.png)
 
 Ejercicio 6
 -----------
+
 
 
 Ejercicio 1
