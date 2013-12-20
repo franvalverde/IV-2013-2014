@@ -232,7 +232,16 @@ sudo adduser $USER libvirtd
 
 Ejercicio 9
 -----------
-
+<strong>Instalar un contenedor usando virt-install</strong>
+<hr>
+virt-install es parte del paquete virtinst. Para instalarlo, en una terminal escribimos:
+<pre>
+sudo apt-get install virtinst
+</pre>
+Instalamos el manager de virt que nos ayudará mucho mediante la interfaz 
+<pre>
+sudo apt-get install virt-manager
+</pre>
 
 
 Enlaces a las wikis
