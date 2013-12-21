@@ -13,15 +13,14 @@ Ejercicio 2
 <hr>
 <pre>
 #!/usr/bin/ruby
-
 $i = 0
 $var = 10
-
 while $i < $var
 	puts ("#$i")
 	$i = $i+1
 end
 </pre>
+
 Ejercicio 3
 -----------
 <strong>¿Se pueden crear estructuras de datos mixtas en Ruby? Crear un array de hashes de arrays e imprimirlo.</strong>
