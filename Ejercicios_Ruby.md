@@ -12,13 +12,13 @@ Ejercicio 2
 <strong>Crear un programa en Ruby que imprima los números desde el 1 hasta otro contenido en una variable.</strong>
 <hr>
 <pre>
-#!/usr/bin/ruby
-$i = 0
-$var = 10
-while $i < $var
+	#!/usr/bin/ruby
+	$i = 0
+	$var = 10
+	while $i < $var
 	puts ("#$i")
 	$i = $i+1
-end
+	end
 </pre>
 
 Ejercicio 3
