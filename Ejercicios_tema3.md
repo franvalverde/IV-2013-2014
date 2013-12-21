@@ -241,8 +241,16 @@ sudo apt-get install virtinst
 Instalamos el manager de virt que nos ayudará mucho mediante la interfaz 
 <pre>
 sudo apt-get install virt-manager
+sudo apt-get install virt-viewer
 </pre>
-
+Movemos la imagen a la carpeta correspondiente para poder realizar la instalación:
+<pre>
+sudo mv ubuntu-13.04-desktop-amd64.iso /var/lib/libvirt/images/ubuntu-13.iso
+</pre>
+Realizamos la instalación con la siguiente orden:
+<pre>
+sudo virt-install --name ubuntu13 --ram 512 --disk path=/home/ubuntu13,size=5 --cdrom='/var/lib/libvirt/images/ubuntu-13.iso' --graphics vnc
+</pre>
 
 Enlaces a las wikis
 ===================
