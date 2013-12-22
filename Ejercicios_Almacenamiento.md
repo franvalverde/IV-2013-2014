@@ -4,6 +4,15 @@ Ejercicio 1
 -----------
 <strong>1. ¿Cómo tienes instalado tu disco duro? ¿Usas particiones? ¿Volúmenes lógicos?</strong>
 <hr>
+Con gparted podemos ver las particiones que tenemos en el disco duro.
+
+![captura1] (https://dl.dropbox.com/s/b9e8szfrwlfwlod/gparted.png)
+
+Las particiones son las siguientes:
+- sda1 (EFI). En formato fat32 y contiene una interfaz que interactúa como puente entre el sistema operativo y el firmware base.
+- sda2 (Macintosh). En formato hfs+, se trata de la partición del sistema operativo MacOs 10.8
+- sda3 (Recovery HD). En formato hfs+, es la partición destinada para recuperar el sistema operativo MacOs en caso de error del sistema.
+- sda4 (Ubuntu). En formato ext4, es la partición destinada para el sistema operativo Ubuntu 13.04 
 
 <hr>
 <strong>2. Si tienes acceso en tu escuela o facultad a un ordenador común para las prácticas, ¿qué almacenamiento físico utiliza?</strong>
