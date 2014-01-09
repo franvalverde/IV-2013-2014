@@ -118,8 +118,18 @@ Ejercicio 7
 -----------
 <strong>Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados. </strong>
 <hr>
-
-
+<pre>
+sudo rados mkpool ejercicio7
+</pre>
+Añadimos un objeto:
+<pre>
+sudo rados put -p ejercicio7 objeto imagen.img
+</pre>
+Y para comprobar que se ha realizado correctamente usamos:
+<pre>
+sudo rados lspools
+sudo rados df
+</pre>
 
 Ejercicio 8
 -----------
