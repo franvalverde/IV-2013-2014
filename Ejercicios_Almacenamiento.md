@@ -70,8 +70,22 @@ Ejercicio 4
 -----------
 <strong>Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema</strong>
 <hr>
-
-
+Creamos la imagen con qemu como en el ejercicio 3.
+<pre>
+qemu-img create -f raw ej4.img 512M
+</pre>
+Usamos losetup que se utiliza para asociar dispositivos bucle con archivos regulares o bloque de dispositivos, para separar los dispositivos loop y para consultar el estado de un dispositivo loop.
+<pre>
+sudo losetup -v -f ej4.img
+</pre>
+Le damos formato:
+<pre>
+sudo mkfs.xfs /dev/loop3
+</pre>
+Y por ultimo montamos:
+<pre>
+sudo mount /dev/loop3 /mnt/loop3/
+</pre>
 
 Ejercicio 5
 -----------
