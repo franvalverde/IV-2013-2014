@@ -76,7 +76,7 @@ qemu-img create -f raw ej4.img 512M
 </pre>
 Usamos losetup que se utiliza para asociar dispositivos bucle con archivos regulares o bloque de dispositivos, para separar los dispositivos loop y para consultar el estado de un dispositivo loop.
 <pre>
-sudo losetup -v -f ej4.img
+sudo losetup -v -f xfs.img
 </pre>
 Le damos formato:
 <pre>
@@ -99,9 +99,18 @@ Ejercicio 6
 -----------
 <strong>Crear un dispositivo ceph usando BTRFS o XFS</strong>
 <hr>
-En primer lugar creamos la imagen de ceph
+En primer lugar creamos la imagen de ceph y se le da formato a la imagen para que tenga un sistema de archivos:
 <pre>
-qemu-img create -f raw imagen.img 1G
+qemu-img create -f raw imagen.img 512M
+sudo mkfs.xfs /dev/loop2
+</pre>
+Arrancamos el demonio:
+<pre>
+sudo /etc/init.d/ceph -a start
+</pre>
+Y por ultimo montamos:
+<pre>
+sudo mount -t ceph ubuntu:/ /mnt/ceph
 </pre>
 
 
