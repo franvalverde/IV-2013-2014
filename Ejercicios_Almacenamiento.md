@@ -28,6 +28,25 @@ Ejercicio 2
 <strong>Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.</strong>
 <hr>
 
+Arrancamos uno de los contenedor que hemos creado en otras sesiones con el comando:
+<pre>
+lxc-start -n contenedor
+</pre>
+Instalamos dentro del contenedor los siguientes paquetes
+<pre>
+sudo apt-get update
+sudo apt-get install fuse
+sudo apt-get install sshfs
+</pre>
+Agregamos el usuario al grupo de usuarios de fuse:
+<pre>
+sudo usermod -a -G fuse franvalverde
+</pre>
+Y por ultimo mapeamos la carpeta para poder usar el directorio del contenedor como si se tratara de un directorio local:
+<pre>
+sshfs ubuntu@10.0.3.45:/home/ubuntu/ /home/franvalverde/IV/carpetacontenedor
+</pre>
+
 Ejercicio 3
 -----------
 <strong>Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre</strong>
