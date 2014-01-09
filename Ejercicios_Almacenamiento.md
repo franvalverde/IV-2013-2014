@@ -56,6 +56,15 @@ Ejercicio 3
 <pre>
 dd of=imagen.img bs=1k
 </pre>
+<i>qcow2</i><br>Formato usado por QEMU pero más adelante ha sido generalizado a casi todos los gestores de MVs de Linux. Para crealo realizamos lo siguiente:
+<pre>
+qemu-img create -f qcow2 imagen.qcow2 5M
+</pre>
+<i>vmdk</i><br>Formato de archivo utilizado por productos de VMware. Para crearlo realizamos lo siguiente:
+<pre>
+qemu-img create -f vmdk imagen.vmdk 5M
+</pre>
+
 
 Ejercicio 4
 -----------
