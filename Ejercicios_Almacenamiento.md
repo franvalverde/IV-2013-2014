@@ -17,6 +17,7 @@ Las particiones son las siguientes:
 <hr>
 <strong>2. Si tienes acceso en tu escuela o facultad a un ordenador común para las prácticas, ¿qué almacenamiento físico utiliza?</strong>
 <hr>
+Los ordenadores que hay en la facultad, utilizan un sistema de ficheros remoto. Estan en formato NFS.
 
 <hr>
 <strong>3. Buscar ofertas SAN comerciales y comparar su precio con ofertas locales (en el propio ordenador) equivalentes.</strong>
@@ -51,7 +52,10 @@ Ejercicio 3
 -----------
 <strong>Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre</strong>
 <hr>
-
+<i>RAW</i><br>Formato que evita los espacios sin asignar y que se representan por metadatos. Para crearlo realizamos lo siguiente:
+<pre>
+dd of=imagen.img bs=1k
+</pre>
 
 Ejercicio 4
 -----------
@@ -64,12 +68,18 @@ Ejercicio 5
 -----------
 <strong>Instalar ceph en tu sistema operativo.</strong>
 <hr>
-
+<pre>
+sudo apt-get install ceph-mds
+</pre>
 
 Ejercicio 6
 -----------
 <strong>Crear un dispositivo ceph usando BTRFS o XFS</strong>
 <hr>
+En primer lugar creamos la imagen de ceph
+<pre>
+qemu-img create -f raw imagen.img 1G
+</pre>
 
 
 Ejercicio 7
