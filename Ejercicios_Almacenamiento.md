@@ -135,8 +135,30 @@ Ejercicio 8
 -----------
 <strong>Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente</strong>
 <hr>
+Accedemos en `www.windowsazurepass.com/azureu` y nos creamos una cuenta en Windows Azure.
+Una vez hecho esto instalamos node.js para ello debemos añadir un repositorio:
+<pre>
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs
+</pre>
+Node.js nos va a servir para poder instalar azure y poder de esta forma usarlo desde linea de ordenes. Instalamos azure de la siguiente manera:
+<pre>
+npm install azure-cli
+</pre>
+Por algun motivo no me realiza la instalación, por lo que sigo los pasos que nos facilita German [https://github.com/germaaan/IV_GMM/blob/master/TEMA4/ejercicio08.md]:
+<pre>
+wget http://az412849.vo.msecnd.net/downloads02/windowsazure-cli.0.7.4.tar.gz
+tar -xzf windowsazure-cli.0.7.4.tar.gz
+./configure
+sudo make install
+</pre>
+Accedemos a la web de windows azure y nos guardamos una copia local del archivo publishSettings. Este archivo contiene un certificado de administración codificado, que sirve como credenciales para administrar las suscripciones y los servicios relacionados. 
 
+Una vez descargado el archivo publishSettings, lo importamos a nuestra linea de ordenes con el comando:
+<pre>
 
+</pre>
 
 Ejercicio 9
 -----------
