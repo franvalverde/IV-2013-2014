@@ -146,19 +146,19 @@ Node.js nos va a servir para poder instalar azure y poder de esta forma usarlo d
 <pre>
 npm install azure-cli
 </pre>
-Por algun motivo no me realiza la instalación, por lo que sigo los pasos que nos facilita German [[https://github.com/germaaan/IV_GMM/blob/master/TEMA4/ejercicio08.md]]:
+Por algun motivo no me realiza la instalación, por lo que sigo los pasos que nos facilita German (https://github.com/germaaan/IV_GMM/blob/master/TEMA4/ejercicio08.md):
 <pre>
 wget http://az412849.vo.msecnd.net/downloads02/windowsazure-cli.0.7.4.tar.gz
 tar -xzf windowsazure-cli.0.7.4.tar.gz
 ./configure
 sudo make install
 </pre>
+
 Accedemos a la web de windows azure y nos guardamos una copia local del archivo publishSettings. Este archivo contiene un certificado de administración codificado, que sirve como credenciales para administrar las suscripciones y los servicios relacionados. 
 
 Una vez descargado el archivo publishSettings, lo importamos a nuestra linea de ordenes con el comando:
-<pre>
 
-</pre>
+![captura2] (https://dl.dropbox.com/s/1sujct9dcbzfbd0/azure_import.png)
 
 Ejercicio 9
 -----------
