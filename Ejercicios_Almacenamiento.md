@@ -160,6 +160,18 @@ Una vez descargado el archivo publishSettings, lo importamos a nuestra linea de 
 
 ![captura2] (https://dl.dropbox.com/s/1sujct9dcbzfbd0/azure_import.png)
 
+Ahora ya podremos crear una cuenta de almacenamiento de la siguiente manera:
+<pre>
+# creamos la cuenta de almacenamiento
+azure account storage create franvalverde
+# observamos las llaves primarias y secundarias asignadas a franvalverde
+azure account keys list franvalverde 
+# exportamos
+export AZURE_STORAGE_ACCOUNT=franvalverde
+export AZURE_STORAGE_ACCESS_KEY=llaveprimaria
+</pre>
+
+
 Ejercicio 9
 -----------
 <strong>Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.</strong>
