@@ -172,6 +172,7 @@ export AZURE_STORAGE_ACCESS_KEY=llaveprimaria
 </pre>
 Ahora si entramos en `https://manage.windowsazure.com` podemos observar que desde el panel de control de azure tambien se ve la nueva cuenta de almacenamiento:
 ![captura3] (https://dl.dropbox.com/s/16nlvbd2z4qlzfm/azure.png)
+
 Ejercicio 9
 -----------
 <strong>Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.</strong>
@@ -193,8 +194,27 @@ Y podemos acceder a los archivos subidos mediante la url que nos facilita en la 
 - http://franvalverde.blob.core.windows.net/imagenes/yo.png
 - http://franvalverde.blob.core.windows.net/texto/practica4c-EC.txt
 
-
 Ejercicio 10
 ------------
 <strong>Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.</strong>
 <hr>
+<pre>
+"""
+Created on Fri Jan 10 18:05:24 2014
+@author: franvalverde
+"""
+
+from azure.storage import BlobService
+
+def imprimeListaBlob(datos):
+    for i in datos.list_containers().containers:
+        print("Contenedor: ".format(i.name))
+        for j in blob_service.list_blobs(i.name).blobs:
+            print("\tNombre del Blob: ".format(j.name))
+            print("\tUrl del Blob: ".format(j.url))
+            print("\n")
+
+llave = 'key primaria'
+datos = BlobService('franvalverde', llave)
+
+</pre>
