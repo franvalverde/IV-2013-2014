@@ -170,13 +170,28 @@ azure account keys list franvalverde
 export AZURE_STORAGE_ACCOUNT=franvalverde
 export AZURE_STORAGE_ACCESS_KEY=llaveprimaria
 </pre>
-
-
+Ahora si entramos en `https://manage.windowsazure.com` podemos observar que desde el panel de control de azure tambien se ve la nueva cuenta de almacenamiento:
+![captura3] (https://dl.dropbox.com/s/16nlvbd2z4qlzfm/azure.png)
 Ejercicio 9
 -----------
 <strong>Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.</strong>
 <hr>
-
+Vamos a crear dos contenedores uno para imagenes y otro para archivos de texto:
+<pre>
+#crea el contenedor imagenes
+azure storage container create imagenes -p blob
+#añade imagenes al contenedor que nos pregunta una vez escrito la orden, indicamos imagenes
+azure storage blob upload /home/franvalverde/Escritorio/yo.png
+#crea el contenedor texto
+azure storage container create texto -p blob
+#añade el archivo txt al contenedor
+azure storage blob upload /home/franvalverde/Escritorio/practica4c-EC.txt
+</pre>
+Observamos la plataforma web de Azure:
+![captura4] (https://dl.dropbox.com/s/nat7ciaavkhexul/contenedores-azure.png)
+Y podemos acceder a los archivos subidos mediante la url que nos facilita en la plataforma web azure:
+- http://franvalverde.blob.core.windows.net/imagenes/yo.png
+- http://franvalverde.blob.core.windows.net/texto/practica4c-EC.txt
 
 
 Ejercicio 10
