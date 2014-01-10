@@ -198,6 +198,7 @@ Ejercicio 10
 ------------
 <strong>Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.</strong>
 <hr>
+Programa en `python`
 <pre>
 """
 Created on Fri Jan 10 18:05:24 2014
