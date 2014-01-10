@@ -146,7 +146,7 @@ Node.js nos va a servir para poder instalar azure y poder de esta forma usarlo d
 <pre>
 npm install azure-cli
 </pre>
-Por algun motivo no me realiza la instalación, por lo que sigo los pasos que nos facilita German [https://github.com/germaaan/IV_GMM/blob/master/TEMA4/ejercicio08.md]:
+Por algun motivo no me realiza la instalación, por lo que sigo los pasos que nos facilita German [[https://github.com/germaaan/IV_GMM/blob/master/TEMA4/ejercicio08.md]]:
 <pre>
 wget http://az412849.vo.msecnd.net/downloads02/windowsazure-cli.0.7.4.tar.gz
 tar -xzf windowsazure-cli.0.7.4.tar.gz
