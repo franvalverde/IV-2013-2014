@@ -31,10 +31,8 @@ qemu -hda NOMBRE.img -m 256 -boot c
 <hr>
 <strong>2. Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.</strong>
 <hr>
-Realizamos la instalación en Parallels.
-1. Adquirimos Parallels (descargamos la versión de prueba).
-
-2. Descargamos la Iso en live CD / DVD para la distribución deseada
+Realizamos la instalación en Parallels.<br>
+1. Adquirimos Parallels (descargamos la versión de prueba).<br>2. Descargamos la Iso en live CD / DVD para la distribución deseada
 
 3. Iniciamos Parallels
 
