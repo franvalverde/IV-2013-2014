@@ -22,11 +22,16 @@ Nosotros debemos primeramente crear la imagen donde queremos que se vaya a insta
 ![captura1](https://dl.dropbox.com/s/20r4r1szu0lrln0/kvm_Imagen.png)
 
 Una vez creada la imagen ya podemos empezar a instalar el sistema operativo. En el mismo directorio donde creamos la imagen debemos ejecutar lo siguiente: 
-![captura2](https://dl.dropbox.com/s/20r4r1szu0lrln0/kvm_Imagen.png)
+![captura2](https://dl.dropbox.com/s/qcx9rpgkt3ftn3y/slitaz.png)
+
+He instalado slitaz (slitaz.img) y Minino (maquina.img).
 
 Una vez que se termina la instalación, solo falta "encender" la máquina virtual que ya se ha instalado, ¿Cómo hacer esto? Sencillo, debemos ejecutar el siguiente comando:
 
-qemu -hda NOMBRE.img -m 256 -boot c
+<pre>
+qemu -hda maquina.img -m 256 -boot c
+</pre>
+
 
 <hr>
 <strong>2. Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.</strong>
