@@ -18,6 +18,7 @@ sudo modprobe kvm-amd
 o
 sudo modprobe kvm-intel
 </pre>
-
+Nosotros debemos primeramente crear la imagen donde queremos que se vaya a instalar el sistema operativo. La única propiedad que es necesaria para crear la imagen es el tamaño de esta, debemos especificar el tamaño que ocupará esa imagen. Para crear la imagen: 
+[!captura1](https://dl.dropbox.com/s/20r4r1szu0lrln0/kvm_Imagen.png)
 <hr>
 <strong>2. Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.</strong><hr>
