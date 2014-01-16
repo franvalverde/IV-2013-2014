@@ -44,3 +44,9 @@ Continuar con la instalación, de igual forma que cuando se hace una instalació
 Una vez terminada aparecerá nuestra maquina para poder ser arrancada.
 
 ![captura4](https://dl.dropbox.com/s/zyrgb4i13tt7tdf/parallels2.png)
+
+Ejercicio 3
+-----------
+<strong>Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual</strong>
+<hr>
+
