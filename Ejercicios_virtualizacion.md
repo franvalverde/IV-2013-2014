@@ -32,9 +32,14 @@ Una vez que se termina la instalación, solo falta "encender" la máquina virtua
 qemu -hda maquina.img -m 256 -boot c
 </pre>
 
-
 <hr>
 <strong>2. Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.</strong>
 <hr>
 Realizamos la instalación en Parallels.<br>
-1. Adquirimos Parallels (descargamos la versión de prueba).<br>2. Descargamos la Iso en live CD / DVD para la distribución deseada<br>3. Iniciamos Parallels<br>4. Pulsamos el + en Máquinas Virtuales Parallels o tambien podemos hacer clic en Archivo | Nuevo ... en el menú<br>5. Buscamos el archivo iso. En Instalar desde desplegables (seleccione Elegir un archivo de imagen ... para abrir un diálogo de archivo)<br>6. Parallels intentará 'auto-detectar' el sistema operativo. Si falla, lo podemos seleccionar en el menú desplegable donde aparecen las distribuciones más populares, y siempre se puede elegir otro Linux Kernel 2.6 (esto funciona incluso si la distribucion utiliza Linux 3.0.x)<br>7. Continuar con la instalación, de igual forma que cuando se hace una instalación tipica.<br>8. Una vez terminada aparecerá nuestra maquina para poder ser arrancada.
+1. Adquirimos Parallels (descargamos la versión de prueba).<br>2. Descargamos la Iso en live CD / DVD para la distribución deseada<br>3. Iniciamos Parallels<br>4. Pulsamos el + en Máquinas Virtuales Parallels o tambien podemos hacer clic en Archivo | Nuevo ... en el menú<br>5. Buscamos el archivo iso. En Instalar desde desplegables (seleccione Elegir un archivo de imagen ... para abrir un diálogo de archivo)<br>6. Parallels intentará 'auto-detectar' el sistema operativo. Si falla, lo podemos seleccionar en el menú desplegable donde aparecen las distribuciones más populares, y siempre se puede elegir otro Linux Kernel 2.6 (esto funciona incluso si la distribucion utiliza Linux 3.0.x)<br>
+
+![captura3](https://dl.dropbox.com/s/8ic5ihatayzuth9/parallels1.png)
+
+7. Continuar con la instalación, de igual forma que cuando se hace una instalación tipica.<br>8. Una vez terminada aparecerá nuestra maquina para poder ser arrancada.
+
+![captura4](https://dl.dropbox.com/s/zyrgb4i13tt7tdf/parallels2.png)
