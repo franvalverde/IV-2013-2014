@@ -41,7 +41,18 @@ Clase del 11 de octubre de 2013
 Clase del 14 de octubre de 2013
 ------------------------------
 
-- [X] Entender los mecanismos de software as a service y comprender los criterios necesarios para su elección.
+- [X] Entender los mecanismos de software as a service y comprender los criterios
+
+- [X] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
+- [X] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
+
+Clase del 8 de noviembre de 2013
+-------------------------------
+
+- [X] Resolver dudas y obstáculos en la realización de la segunda práctica.
+
+Clase del 11 de noviembre de 2013
+------------------------------- necesarios para su elección.
 - [X] Darse de alta en uno de de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente. 
 
 Clase del 18 de octubre de 2013
@@ -72,17 +83,6 @@ Clase del 28 de octubre de 2013
 Clase del 4 de noviembre de 2013
 -------------------------------
 
-- [X] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
-- [X] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
-
-Clase del 8 de noviembre de 2013
--------------------------------
-
-- [X] Resolver dudas y obstáculos en la realización de la segunda práctica.
-
-Clase del 11 de noviembre de 2013
--------------------------------
-
 - [X] Entender el concepto de contenedores
 - [X] Configurar el sistema para poder crear y usar contenedores
 - [X] Crear y usar contenedores
@@ -107,9 +107,42 @@ Clase del 22 de noviembre de 2013
 Clase del 2 de diciembre de 2013
 -------------------------------
 
-- [ ] Terminar la familiarización con Ruby2
-- [ ] Recordar conceptos de almacenamiento físico.
-- [ ] Entender el concepto de FUSE y usarlo en la prática.
-- [ ] Crear y manipular formatos de provisionamiento delgado.
+- [X] Terminar la familiarización con Ruby2
+
+Clase del 13 diciembre
+----------------------
+
+- [X] Provisionamiento de recursos para una máquina virtual.
+- [X] Entender sistemas de almacenamiento de objetos e instalarlos.
+
+Clase del 16 diciembre
+----------------------
+
+- [X] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+- [X] Aprender a usar el almacenamiento virtual en la nube.
+
+Clase del 20 diciembre
+----------------------
+
+- [X] Comenzar la tercera práctica
+- [X] Entender los diferentes componentes de 
+- [X] Recordar conceptos de almacenamiento físico.
+- [X] Entender el concepto de FUSE y usarlo en la prática.
+- [X] Crear y manipular formatos de provisionamiento delgado.
+la infraestructura como servicio.
+- [X] Aprender a usar máquinas virtuales, localmente y en la nube.
+- [X] Comprender las bases físicas de las infraestructuras virtuales.
+
+Clase del 10 enero
+------------------
+
+- [X] Continuar con la tercera práctica
+
+Clase del 13 enero
+------------------
+
+- [X] Resolver dudas y entregar la tercera práctica.
+- [ ] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+- [ ] Instalar y comenzar a utilizar un sistema de configuración.
 
 
