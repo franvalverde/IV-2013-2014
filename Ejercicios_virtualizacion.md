@@ -40,6 +40,7 @@ Realizamos la instalación en Parallels.<br>
 
 ![captura3](https://dl.dropbox.com/s/8ic5ihatayzuth9/parallels1.png)
 
-7. Continuar con la instalación, de igual forma que cuando se hace una instalación tipica.<br>8. Una vez terminada aparecerá nuestra maquina para poder ser arrancada.
+Continuar con la instalación, de igual forma que cuando se hace una instalación tipica.
+Una vez terminada aparecerá nuestra maquina para poder ser arrancada.
 
 ![captura4](https://dl.dropbox.com/s/zyrgb4i13tt7tdf/parallels2.png)
