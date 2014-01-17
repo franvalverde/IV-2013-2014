@@ -50,3 +50,15 @@ Ejercicio 3
 <strong>Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual</strong>
 <hr>
 
+Ejercicio 4
+-----------
+<strong>Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh</strong>
+<hr>
+Creamos la imagen:
+<pre>
+qemu-img create kvm/mint.img 1G
+</pre>
+Lanzamos la instalación con la opcion -m 512
+<pre>
+qemu -hda kvm/mint.img -cdrom /home/franvalverde/Descargas/linuxmind-16-kde.iso -boot d -m 512
+</pre>
