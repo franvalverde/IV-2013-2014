@@ -25,7 +25,29 @@ file "carpeta/receta" do
   content "Creado desde receta "
 end
 </pre>
-Para ejecutarlo usamos `chef-aply ejercicio2.rb`. Este es el resultado:
+Para ejecutarlo usamos `chef-apply ejercicio2.rb`. Este es el resultado:
 
 ![captura1](https://dl.dropbox.com/s/ksb0iojg0bdsovx/receta_carpeta.png)
 
+Añadiremos ahora lo necesario para instalar nginx y un editor, por ejemplo geany. 
+<pre>
+package 'nginx' //esto internamente hara un apt-get install
+package 'geany'
+</pre>
+![captura2](https://dl.dropbox.com/s/41cr4qsl6zqv72w/receta_geany.png)
+
+Ejercicio 3
+-----------
+<srong>Escribir en YAML la siguiente estructura de datos en JSON</strong><hr>
+YAML es un formato de serialización de datos legible por humanos inspirado en lenguajes como XML, C, Python y Perl.
+<pre>
+--- # Bloque
+uno : dos
+tres :
+    - 4
+    - 5
+    - Seis
+    - siete: 8
+    - nueve:
+      - Object
+</pre>
