@@ -3,13 +3,11 @@ Ejercicios Gestión de Configuraciones
 Ejercicio 1
 -----------
 <strong>Instalar chef en la máquina virtual que vayamos a usar</strong><hr>
-En una máquina tipo ubuntu, hay que comenzar instalando Ruby y Ruby Gems, el gestor de librerías:
+Chef es una herramienta para la gestión de configuraciones. Es decir, se encarga de instalar y configurar las aplicaciones en servidores o incluso estaciones de trabajo. Con él podemos realizar desde configuraciones básicas como establecer la hora del sistema, el idioma… hasta cosas tan complejas como levantar y configurar un cluster entero.
+
+En una máquina tipo ubuntu, la forma más sencilla es usando el paquete Omnibus proporcionado por Opscode:
 <pre>
-sudo apt-get install ruby1.9.1 ruby1.9.1-dev rubygems
-</pre>
-chef se distribuye como una gema, por lo que se puede instalar siempre como:
-<pre>
-sudo gem install chef
+wget -O- https://www.opscode.com/chef/install.sh | sudo bash
 </pre>
 
 Ejercicio 2
