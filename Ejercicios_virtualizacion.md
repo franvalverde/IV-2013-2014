@@ -95,3 +95,10 @@ Comprobamos que podemos acceder via web a nuestra maquina:
 Ejercicio 6
 -----------
 <strong>Usar juju para hacer el ejercicio anterior.</strong><hr>
+...
+
+Ejercicio 7
+-----------
+<strong>Instalar una máquina virtual Ubuntu 12.04 para el hipervisor que tengas instalado.</strong><hr>
+...
+
