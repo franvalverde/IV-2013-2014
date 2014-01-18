@@ -49,6 +49,7 @@ Ejercicio 3
 -----------
 <strong>Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual</strong>
 <hr>
+...
 
 Ejercicio 4
 -----------
@@ -56,9 +57,41 @@ Ejercicio 4
 <hr>
 Creamos la imagen:
 <pre>
-qemu-img create kvm/mint.img 1G
+qemu-img create kvm/mint.img 8G //linux mint exige minimo 8gb
 </pre>
 Lanzamos la instalación con la opcion -m 512
 <pre>
 qemu -hda kvm/mint.img -cdrom /home/franvalverde/Descargas/linuxmind-16-kde.iso -boot d -m 512
 </pre>
+...
+
+Ejercicio 5
+-----------
+<strongCrear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.</strong><hr>
+Creamos la imagen:
+<pre>
+qemu-img create kvm/ubuntu.img 8G
+</pre>
+Lanzamos la instalación
+<pre>
+qemu -hda kvm/ubuntu.img -cdrom /home/franvalverde/Descargas/ubuntu-13.04-desktop-amd64.iso -boot d
+</pre>
+Una vez instalada la ejecutamos con:
+<pre>
+qemu -hda ubuntu.img -m 1G -boot c
+</pre>
+Instalamos nginx:
+<pre>
+sudo apt-get install nginx
+</pre>
+Lanzamos el demonio:
+
+![ejercicio5cap1](https://dl.dropbox.com/s/mem45i2e8xl5vwc/nginx-ubuntu.png)
+
+Comprobamos que podemos acceder via web a nuestra maquina:
+
+![ejercicio5cap2](https://dl.dropbox.com/s/6jfxsnfwqq2ho0s/nginx-ubuntu2.png)
+
+Ejercicio 6
+-----------
+<strong>Usar juju para hacer el ejercicio anterior.</strong><hr>
