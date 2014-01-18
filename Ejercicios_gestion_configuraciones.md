@@ -25,6 +25,7 @@ file "carpeta/receta" do
   content "Creado desde receta "
 end
 </pre>
-Este es el resultado:
+Para ejecutarlo usamos `chef-aply ejercicio2.rb`. Este es el resultado:
+
 ![captura1](https://dl.dropbox.com/s/ksb0iojg0bdsovx/receta_carpeta.png)
 
