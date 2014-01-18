@@ -13,4 +13,18 @@ wget -O- https://www.opscode.com/chef/install.sh | sudo bash
 Ejercicio 2
 -----------
 <strong>Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual.</strong><hr>
+Creamos un fichero ruby con el nombre que prefiramos, en mi caso ejercicio2.rb, y añadimos la información necesaria para realizar nuestra receta.
+Comenzaremos con la creación de un directorio y un fichero, dentro de nuestra receta ejercicio2.rb añadimos lo siguiente:
+<pre>
+directory 'carpeta/'
+file "carpeta/receta" do
+  owner "franvalverde"
+  group "franvalverde"
+  mode 00777
+  action :create
+  content "Creado desde receta "
+end
+</pre>
+Este es el resultado:
+![captura1](https://dl.dropbox.com/s/ksb0iojg0bdsovx/receta_carpeta.png)
 
