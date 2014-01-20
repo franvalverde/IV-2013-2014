@@ -129,6 +129,13 @@ Modificamos el archivo de configuración de juju en el apartado de azure ponemos
 
 ![ejer6-cap2](https://dl.dropbox.com/s/mzfgdp4rbarnnma/configuracionAzureYaml.png)
 
+Ya con la configuración realizada, creamos un táper para instalar los servicios dentro de él e instalamos el GUI:
+<pre>
+sudo juju switch azure
+sudo juju bootstrap
+sudo juju deploy --to 0 juju-gui
+sudo juju expose juju-gui
+</pre>
 
 Ejercicio 7
 -----------
