@@ -95,7 +95,36 @@ Comprobamos que podemos acceder via web a nuestra maquina:
 Ejercicio 6
 -----------
 <strong>Usar juju para hacer el ejercicio anterior.</strong><hr>
-...
+- <i>CONFIGURACIÓN PREVIA</i><br>
+En primer lugar instalamos juju en el caso de no tenerlo instalado ya.
+<pre>
+sudo add-apt-get-repository ppa:juju/stable
+sudo apt-get update
+sudo apt-get install juju-core
+# creamos el archivo de configuración
+juju init
+</pre>
+Modificamos el archivo de configuración que como nos indica el terminal al crearlo esta en la ruta `~/.juju/environments.yaml`.
+Es importante modificar la linea de default para que trabaje en entorno local:
+<pre>
+#default: amazon
+default: local
+</pre>
+Creamos el entorno:
+<pre>
+juju bootstrap
+</pre>
+- <i>CONFIGURACIÓN AZURE</i><br>
+Primero nos creamos un certificado rellenando todos los datos:
+<pre>
+openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout azure.pem -out azure.pem
+openssl x509 -inform pem -in azure.pem -outform der -out azure.cer
+chmod 600 azure.cer
+</pre>
+Cargamos en la web azure el certificado que acabamos de crear:
+
+![ejer6-cap1](https://dl.dropbox.com/s/a198zj1natry1t6/certificado_Azure.png)
+
 
 Ejercicio 7
 -----------
