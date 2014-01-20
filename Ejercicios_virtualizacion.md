@@ -137,6 +137,14 @@ sudo juju deploy --to 0 juju-gui
 sudo juju expose juju-gui
 </pre>
 
+El proceso no es rapido, es decir, no aborte si se queda un buen rato sin indicarte nada durante alguna de las ordenes anteriores. 
+Ahora para comprobar que todo esta OK y obtener la dirección url desde donde trabajaremos con la GUI usamos la orden:
+<pre>
+juju status
+</pre>
+
+
+
 Ejercicio 7
 -----------
 <strong>Instalar una máquina virtual Ubuntu 12.04 para el hipervisor que tengas instalado.</strong><hr>
