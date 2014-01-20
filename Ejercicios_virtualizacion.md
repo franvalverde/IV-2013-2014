@@ -125,6 +125,10 @@ Cargamos en la web azure el certificado que acabamos de crear:
 
 ![ejer6-cap1](https://dl.dropbox.com/s/a198zj1natry1t6/certificado_Azure.png)
 
+Modificamos el archivo de configuración de juju en el apartado de azure ponemos la información relevante a nuestro usuario de azure.
+
+![ejer6-cap2](https://dl.dropbox.com/s/mzfgdp4rbarnnma/configuracionAzureYaml.png)
+
 
 Ejercicio 7
 -----------
