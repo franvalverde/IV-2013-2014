@@ -41,13 +41,26 @@ Ejercicio 3
 <srong>Escribir en YAML la siguiente estructura de datos en JSON</strong><hr>
 YAML es un formato de serialización de datos legible por humanos inspirado en lenguajes como XML, C, Python y Perl.
 <pre>
---- # Bloque
-uno : dos
-tres :
-    - 4
-    - 5
-    - Seis
-    - siete: 8
-    - nueve:
-      - Object
+uno:"dos"
+tres:
+    -4
+    -5
+    -"Seis"
+    -
+        -siete:8
+        -nueve:[10,11]
+</pre>
+
+Ejercicio 4 
+-----------
+<strong>Desplegar los fuentes de la aplicación de DAI, usando ansible</strong>
+<hr>
+Nos descargamos e instalamos en primer lugar ansible:
+<pre>
+sudo pip install ansible
+</pre>
+Creamos un archivo donde le indicaremos donde se encuentra alojada nuestra aplicación, en él introducimos lo siguiente:
+<pre>
+[azure]
+http://ubuntu1204peq.cloudapp.net/ingenia/
 </pre>
