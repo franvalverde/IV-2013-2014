@@ -55,6 +55,7 @@ Ejercicio 4
 -----------
 <strong>Desplegar los fuentes de la aplicación de DAI, usando ansible</strong>
 <hr>
+Ansible es sistema de gestión remota de configuración que permite gestionar simultáneamente miles de sistemas diferentes. Está basado en YAML para la descripción de los sistemas y escrito en Python.
 Nos descargamos e instalamos en primer lugar ansible:
 <pre>
 sudo pip install ansible
@@ -62,5 +63,27 @@ sudo pip install ansible
 Creamos un archivo donde le indicaremos donde se encuentra alojada nuestra aplicación, en él introducimos lo siguiente:
 <pre>
 [azure]
-http://ubuntu1204peq.cloudapp.net/ingenia/
+ubuntu1204peq.cloudapp.net/ingenia/
 </pre>
+Creamos una variable local que va a usar ansible para realizar la conexión, en ella introduce la dirección a nuestro archivo con los servidores de azure. Y posteriormente realizamos un ping para comprobar que se ha realizado la conexión correctamente.
+
+![captura_ansible1](https://dl.dropbox.com/s/kmwr3e9rs0bu4d9/ansible_azure.png)
+
+Podemos clonar un repositorio con ansible de forma muy sencilla:
+<pre>
+ansible azure -m git -a "repo=https://github.com/IV-GII/Ingenia.git dest=~/ansible_ingenia vesion=HEAD" -vvvv
+</pre>
+
+Ejercicio 5 
+-----------
+<strong>Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible</strong>
+...
+
+Ejercicio 6
+-----------
+<strong>Instalar una máquina virtual Debian usando Vagrant y conectar con ella.</strong><hr>
+
+Ejercicio 7
+-----------
+Ejercicio 8
+-----------
