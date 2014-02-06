@@ -104,5 +104,8 @@ vagrant ssh
 
 Ejercicio 7
 -----------
+<strong>Crear un script para provisionar nginx o cualquier otro servidor web que pueda ser útil para alguna otra práctica</strong><hr>
+
 Ejercicio 8
 -----------
+<strong>Configurar tu máquina virtual usando vagrant con el provisionador ansible</strong><hr>
