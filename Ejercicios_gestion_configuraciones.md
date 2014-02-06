@@ -82,6 +82,25 @@ Ejercicio 5
 Ejercicio 6
 -----------
 <strong>Instalar una máquina virtual Debian usando Vagrant y conectar con ella.</strong><hr>
+La ventaja de Vagrant es que permite gestionar el ciclo de vida completo de una máquina virtual, desde la creación hasta su destrucción pasando por el provisionamiento y la monitorización o conexión con la misma. 
+<pre>
+sudo apt-get install Vagrant
+</pre>
+Nos descargamos una distribución debian:
+<pre>
+vagrant box add debian https://dl.dropboxusercontent.com/u/197673519/debian-7.2.0.box
+</pre>
+
+![captura_vagrant1](https://dl.dropbox.com/s/oejm260fl1kaguj/vagrant.png)
+
+
+Crea un fichero Vagrantfile (y así te lo dice) que permite trabajar y llevar a cabo cualquier configuración adicional. Una vez hecho eso ya podemos inicializar la máquina y trabajar con ella.
+
+<pre>
+vagrant init debian
+vagrant up
+vagrant ssh
+</pre>
 
 Ejercicio 7
 -----------
