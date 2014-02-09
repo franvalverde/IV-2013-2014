@@ -105,6 +105,17 @@ vagrant ssh
 Ejercicio 7
 -----------
 <strong>Crear un script para provisionar nginx o cualquier otro servidor web que pueda ser útil para alguna otra práctica</strong><hr>
+Abrimos nuestro archivo de configuración Vagrantfile y tan solo vamos a añadir unas líneas debajo de la linea que identifica nuestra maquina `config.vm.box = "debian"`:
+<pre>
+config.vm.provision "shell",
+inline: "sudo apt-get install nginx",
+inline: "sudo service nginx restart"
+</pre>
+Para terminar levantamos la maquina y la provisionamos con las dos siguientes lineas de ordenes:
+<pre>
+vagrant up
+vagrant provision
+</pre>
 
 Ejercicio 8
 -----------
